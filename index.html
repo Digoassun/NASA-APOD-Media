@@ -21,16 +21,29 @@
         <section>
             <div class="initial">
                 <h2>Clique no foguete!</h2>
-                <img class="foguete" src="media/rocket.gif" alt="foguete">
+                <img id="foguete" class="foguete" src="media/rocket.gif" alt="foguete">
             </div>
         </section>
-        <section>
-            <div >
-
+        <section id="showup" class="showup">
+            <p class="info">Essa é sua mais nova experiência astronômica onde você poderá selecionar uma data aleatória entre Junho de 1995 até os dias de hoje, e irá receber uma mídia vindo diretamente da NASA daquele dia e uma breve descrição do fenômeno apresentado.</p>
+            <div class="user">
+                <label for="">Selecione uma data</label>
+                <input id="inputDate" type="date">                
+                <div class="btns">
+                    <button class="button" id="btnInput">Data Selecionada</button>
+                    <button id="buttonDay" class="button">Mídia do dia</button>
+                </div>
+            </div>
+            <div class="output">
+                <h3></h3>
+                <img class="apodImg" id="apodImg" src="">
+                <iframe id="apodVideo"></iframe>
+                <p id="description"></p>
             </div>
         </section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
 </body>
 
