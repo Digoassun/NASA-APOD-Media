@@ -11,7 +11,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 
 header {
@@ -33,10 +32,12 @@ header {
 }
 
 main {
+    color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .initial {
@@ -58,7 +59,7 @@ main {
     transform: scale(1.2);
 }
 
-.info{
+.info {
     width: 80%;
     text-align: center;
     font-size: 1.2rem;
@@ -71,14 +72,14 @@ main {
     gap: 10px;
 }
 
-.user{
+.user {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.btns{
+.btns {
     display: flex;
     gap: 20px;
 }
@@ -90,26 +91,36 @@ main {
     letter-spacing: 0.1em;
     color: #313133;
     background: #4FD1C5;
-  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
     border: none;
     border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    position: relative;    
-    }
+    position: relative;
+}
 
-  .button:hover {    
+.button:hover {
     transform: translateY(-6px);
-  }   
+}
 
-.output{
+.output {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-  .apodImg{
-      width: 20%;
-  }
+.apodImg {
+    width: 20%;
+    display: none;
+}
+
+.apodVideo {
+    display: none;
+}
+
+.description {
+    text-align:center;
+    width: 70%;
+}
