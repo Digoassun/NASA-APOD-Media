@@ -14,7 +14,6 @@ body {
 }
 
 header {
-    padding: 1em;
     font-size: 1.3rem;
 }
 
@@ -33,7 +32,7 @@ header {
 
 main {
     color: white;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +59,7 @@ main {
 }
 
 .info {
-    width: 80%;
+    width: 70%;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -69,6 +68,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -98,7 +98,7 @@ main {
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    position: relative;
+    /* position: relative; */
 }
 
 .button:hover {
@@ -109,6 +109,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .apodImg {
@@ -123,4 +124,20 @@ main {
 .description {
     text-align:center;
     width: 70%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.link {
+    width: 2em;
 }

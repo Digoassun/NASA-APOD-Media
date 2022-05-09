@@ -1,9 +1,9 @@
-// $('#showup').hide()
+$('#showup').hide()
 
 $('#foguete').click(function () {
     $('#showup').fadeIn(2000)
-    $("main").css("justify-content", "flex-start")
-
+    $("#initialSec").fadeOut(1000)
+   
 })
 
 $('#apodVideo').hide();
