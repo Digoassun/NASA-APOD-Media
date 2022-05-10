@@ -27,14 +27,14 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px;    
+    gap: 15px;
 }
 
 .imglogo {
     width: 3em;
 }
 
-main {    
+main {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ main {
 .info {
     width: 50%;
     text-align: center;
-    font-size: 2rem;    
+    font-size: 2rem;
 }
 
 h2 {
@@ -90,7 +90,7 @@ h2 {
     margin-bottom: 50px;
 }
 
-.btns {    
+.btns {
     display: flex;
     gap: 20px;
 }
@@ -124,13 +124,14 @@ h2 {
     gap: 10px;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
     text-align: center;
 }
 
 .apodImg {
-    width:20%;    
+    min-width: 300px;
+    max-width: 40%;
     display: none;
 }
 
@@ -143,11 +144,9 @@ h3{
 .description {
     text-align: center;
     width: 50%;
-    /* color: #000000;
-    text-shadow: 0 0 10px #FFFFFF; */
 }
 
-.copyright{
+.copyright {
     display: none;
     margin-bottom: 1rem;
 }
@@ -167,4 +166,27 @@ footer {
 .link {
     width: 2em;
 }
-  
+
+@media(max-width:1100px){
+    .info{
+        width: 80%;
+    }
+
+    .description {
+        width: 80%;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        font-size: 1rem;
+    }
+    
+    .info{
+        font-size: 1.5rem;
+    }
+    
+    footer{
+        font-size: 0.8rem;
+    }
+}

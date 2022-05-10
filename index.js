@@ -28,7 +28,7 @@ $("#btnInput").click(function () {
             $("#description").text(data.explanation)
             if (data.copyright != null) {
                 $("#copyright").css("display","flex")
-                $("#copyright").text(`Descrição de ${data.copyright}`)
+                $("#copyright").text(data.copyright)
             } else if (data.copyright == null) {
                 $("#copyright").css("display","none")
             }
@@ -54,7 +54,7 @@ $("#buttonDay").click(function (e) {
             $("#description").text(data.explanation)
             if (data.copyright != null) {
                 $("#copyright").css("display","flex")
-                $("#copyright").text(`Descrição de ${data.copyright}`)
+                $("#copyright").text(data.copyright)
             } else if (data.copyright == null) {
                 $("#copyright").css("display","none")
             }
