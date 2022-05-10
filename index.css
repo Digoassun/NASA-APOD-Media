@@ -5,16 +5,20 @@
 }
 
 body {
+    font-family: 'Space Grotesk', sans-serif;
     width: 100%;
     min-height: 100vh;
     background-image: url(media/bg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #000000;
+    text-shadow: 0 0 5px #FFFFFF;
+    font-weight: 500;
 }
 
 header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -23,16 +27,14 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    color: white;
+    gap: 15px;    
 }
 
 .imglogo {
     width: 3em;
 }
 
-main {
-    color: white;
+main {    
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -45,8 +47,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    gap: 5px;
+    gap: 15px;
+    color: #000000;
+    text-shadow: 0 0 10px #FFFFFF;
 }
 
 .foguete {
@@ -60,9 +63,13 @@ main {
 }
 
 .info {
-    width: 70%;
+    width: 50%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;    
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .showup {
@@ -71,6 +78,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .user {
@@ -78,9 +86,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
 }
 
-.btns {
+.btns {    
     display: flex;
     gap: 20px;
 }
@@ -99,7 +109,8 @@ main {
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    /* position: relative; */
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
 }
 
 .button:hover {
@@ -113,18 +124,32 @@ main {
     gap: 10px;
 }
 
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .apodImg {
-    width: 20%;
+    width:20%;    
     display: none;
 }
 
 .apodVideo {
     display: none;
+    border: none;
+    border-radius: 8px;
 }
 
 .description {
-    text-align:center;
-    width: 70%;
+    text-align: center;
+    width: 50%;
+    /* color: #000000;
+    text-shadow: 0 0 10px #FFFFFF; */
+}
+
+.copyright{
+    display: none;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -142,3 +167,4 @@ footer {
 .link {
     width: 2em;
 }
+  

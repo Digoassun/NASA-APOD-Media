@@ -3,20 +3,20 @@ $('#showup').hide()
 $('#foguete').click(function () {
     $('#showup').fadeIn(2000)
     $("#initialSec").fadeOut(1000)
-   
+
 })
 
 $('#apodVideo').hide();
 
-var apodVideo = $("#apodVideo")
-var apodImg = $("#apodImg")
+const apodVideo = $("#apodVideo")
+const apodImg = $("#apodImg")
 
 $("#btnInput").click(function () {
-    var date = $('#inputDate').val()
+    const date = $('#inputDate').val()
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=qQll8YHtQi7NtYVK3hkf4Qy6mYY4pIM45mBJNN7z&date=${date}`,
         type: "GET",
-        success: function (data) {    
+        success: function (data) {
             $("h3").text(data.title);
             if (data.media_type == 'image' || data.media_type == 'gif') {
                 apodImg.attr("src", data.url).css("display", "flex")
@@ -26,6 +26,12 @@ $("#btnInput").click(function () {
                 apodImg.css("display", "none")
             }
             $("#description").text(data.explanation)
+            if (data.copyright != null) {
+                $("#copyright").css("display","flex")
+                $("#copyright").text(`Descrição de ${data.copyright}`)
+            } else if (data.copyright == null) {
+                $("#copyright").css("display","none")
+            }
         }
     })
 })
@@ -46,6 +52,12 @@ $("#buttonDay").click(function (e) {
                 apodImg.css("display", "none")
             }
             $("#description").text(data.explanation)
+            if (data.copyright != null) {
+                $("#copyright").css("display","flex")
+                $("#copyright").text(`Descrição de ${data.copyright}`)
+            } else if (data.copyright == null) {
+                $("#copyright").css("display","none")
+            }
         }
     })
 })
